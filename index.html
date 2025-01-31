@@ -29,8 +29,9 @@
         }
     </script>
 </head>
+
 <body class="font-sora">
-    <header>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
         <!-- navbar medium screen -->
         <nav class="md:block hidden">
             <div class="flex justify-evenly items-center mt-6">
@@ -56,17 +57,30 @@
                     </div>
                 </div>
                 <!-- logged info -->
-                
+
             </div>
         </nav>
         <!-- navbar mobile screen -->
-         <nav class="md:hidden border border-1 border-b-orange-500">
+        <nav class="md:hidden border border-1 border-b-orange-500">
             <div class="flex justify-between  items-center px-4 py-3">
-                <img src="c2-assets/logo-short1.png" alt="">
-                <i class="fa-solid fa-bars h-auto w-auto text-center text-green-700 "></i>
+                <a href="#"><img src="c2-assets/logo-short1.png" alt=""></a>
+                <a href="#"><i class="fa-solid fa-bars h-auto w-auto text-center text-green-700 "></i></a>
             </div>
-         </nav>
-        <!-- hero section -->
+        </nav>
+        <!-- banner section -->
+        <section class="my-24 mx-auto">
+            <div class="flex flex-col  items-center gap-9 md:mx-auto ">
+                <div class="flex flex-col items-center text-center gap-8 md:w-2/4 mx-8 md:mx-auto">
+                    <h2 class="font-semibold text-5xl">Freshness <span class="text-green-700">You Can Count On</span>, Prices You’ll Love!
+                    </h2>
+                    <p class=" text-[#111111] text-xl ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                    </p>
+                </div>
+                <img class="mx-72 md:w-2/5 text-center" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+
+
+        </section>
 
     </header>
 
