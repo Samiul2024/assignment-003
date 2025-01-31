@@ -5,25 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
-</head>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- fontawsome cdn -->
+    <script src="https://kit.fontawesome.com/e433d762f0.js" crossorigin="anonymous"></script>
 
-<body>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'sora': ['sora', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sora">
     <header>
-        <!-- navbar -->
-        <nav>
-            <div>
+        <!-- navbar medium screen -->
+        <nav class="md:block hidden">
+            <div class="flex justify-evenly items-center mt-6">
                 <!-- logo -->
-                <div><a href="#"><img src="c2-assets/logo-header.png" alt="logo-header"></a></div>
+                <div class=""><a href="#"><img src="c2-assets/logo-header.png" alt="logo-header"></a>
+                </div>
                 <!-- nav menu -->
-                <div>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                <div class="">
+                    <ul class="flex justify-between gap-8">
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
+                <!-- nav icons -->
+                <div class="flex gap-3 items-center">
+                    <a class="h-6 w-6" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="text-black h-6 w-7" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class="flex gap-3">
+                        <button class="bg-white-700 px-7 py-2 border-2 border-orange-400 rounded-lg text-black">Log
+                            In</button>
+                        <button class="bg-green-600 px-7 py-2 rounded-lg text-white">Register</button>
+                    </div>
+                </div>
+                <!-- logged info -->
+                
             </div>
         </nav>
+        <!-- navbar mobile screen -->
+         <nav class="md:hidden border border-1 border-b-orange-500">
+            <div class="flex justify-between  items-center px-4 py-3">
+                <img src="c2-assets/logo-short1.png" alt="">
+                <i class="fa-solid fa-bars h-auto w-auto text-center text-green-700 "></i>
+            </div>
+         </nav>
         <!-- hero section -->
 
     </header>
